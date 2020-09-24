@@ -1,0 +1,17 @@
+name: Functions Merge Master
+
+on:
+  push:
+    branches:
+      - master
+
+    paths:
+      - 'functions/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test MASTER
+        run: echo "TEST MASTER"
