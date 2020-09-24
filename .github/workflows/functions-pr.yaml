@@ -1,0 +1,17 @@
+name: Functions Pull Request
+
+on:
+  pull_request:
+    paths:
+      - 'functions/**'
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: echo "TEST"
