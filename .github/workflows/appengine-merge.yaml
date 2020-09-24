@@ -1,0 +1,17 @@
+name: App Engine Merge Master
+
+on:
+  push:
+    branches:
+      - master
+
+    paths:
+      - 'appengine/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test MASTER
+        run: echo "TEST MASTER"
