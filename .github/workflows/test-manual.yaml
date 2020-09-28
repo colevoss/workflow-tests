@@ -1,0 +1,13 @@
+name: Manual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: HELLO
+        run: |
+          echo "THIS IS RUNNING $GITHUB_REF - $GITHUB_SHA"
